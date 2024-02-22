@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <title>Market Profit App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+    </head>    
+    <body>
+        <div class="center_container">
+            <h1>Product Info App</h1>
+
+            <div class="input_container">
+                <p>Barcode</p>
+                <input type="text" id="barcode" value="" inputmode="numeric" placeholder="N/A">
+            </div>
+    
+            <!--
+                <div class="input_container">
+                    <p>Price</p>
+                    <input type="number" id="price" value="" placeholder="N/A">
+                </div>
+            -->
+
+            <button onclick="searchProduct()">Search</button>
+
+            <div class="product_info hidden" id="productInfo">
+                <div class="product_details">
+                    <p class="product_name" id="productName">Product Name</p>
+                    <p class="product_price" id="productBrand">0€</p>
+                </div>
+                <img class="product_image" id="productImage">
+            </div> 
+        </div>
+    </body>
+
+    <script src="main.js"></script>
+</html>
